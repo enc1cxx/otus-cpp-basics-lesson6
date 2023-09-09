@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/49d9079affaf8886566e30c61abd5930/googletest-populate.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/29661a0bfadb7610a59cfa2df5f866ad/googletest-populate-complete.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-build.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-configure.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-download.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-install.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-mkdir.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-patch.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-test.rule
+C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/_deps/googletest-subbuild/CMakeFiles/3f7972078fb1538bcb00533ccae9255b/googletest-populate-update.rule

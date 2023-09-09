@@ -1,0 +1,10 @@
+^C:\USERS\USER\SOURCE\REPOS\OTUS-CPP-BASICS-LESSON6\BUILD\CMAKEFILES\C8A25AFDF77EE7C781FCCFF60778A6FD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/source/repos/otus-cpp-basics-lesson6 -BC:/Users/User/source/repos/otus-cpp-basics-lesson6/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/unittests.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

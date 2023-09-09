@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\3f7972078fb1538bcb00533ccae9255b\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\29661a0bfadb7610a59cfa2df5f866ad\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\49d9079affaf8886566e30c61abd5930\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{689EEA91-860E-303F-92D1-F17030F63018}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
