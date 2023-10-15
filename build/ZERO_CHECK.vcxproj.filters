@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\User\source\repos\otus-cpp-basics-lesson6\build\CMakeFiles\c8a25afdf77ee7c781fccff60778a6fd\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\AAleksandrov\source\repos\otus-cpp-basics-lesson6\build\CMakeFiles\a44eaf469d0bc8072b41c6a7ec13568c\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{58162E0A-AED8-3B1E-AE1D-F7F24EA76536}</UniqueIdentifier>
+      <UniqueIdentifier>{E7052337-8F65-3FE8-BBC6-0201D2C3B9FF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

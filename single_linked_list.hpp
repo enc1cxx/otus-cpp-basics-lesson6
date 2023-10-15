@@ -193,6 +193,30 @@ class SingleLinkedList {
     swap(temp);
   }
 
+  // Move ctor
+  SingleLinkedList(SingleLinkedList&& other) noexcept {
+    std::cout << "Move ctor" << std::endl;
+    size_ = other.size_;
+    other.size_ = 0;
+    head_ = other.head_;
+    other.head_ = nullptr;
+    end_ = other.end_;
+    other.end_ = nullptr;
+  }
+
+  // Move assignment operator
+  SingleLinkedList& operator=(SingleLinkedList&& rhs)noexcept {
+    std::cout << "Move assignment operator" << std::endl;
+    this->size_ = rhs.size_;
+    rhs.size_ = 0;
+    this->head_ = rhs.head_;
+    rhs.head_ = nullptr;
+    this->end_ = rhs.end_;
+    rhs.end_ = nullptr;
+
+    return *this;
+  }
+
   template <typename TypeIt>
   void Init(TypeIt begin, TypeIt end) {
     Node *node = head_;
@@ -276,12 +300,16 @@ class SingleLinkedList {
 
   // Очищает список за время O(N)
   void clear() noexcept {
-    while (head_->next_node) {
-      Node *new_head = head_->next_node->next_node;
-      delete head_->next_node;
-      head_->next_node = new_head;
-    }
-    size_ = 0;
+      if (head_) {
+          while (head_->next_node) {
+              Node* new_head = head_->next_node->next_node;
+              delete head_->next_node;
+              head_->next_node = new_head;
+          }
+          delete head_;
+          size_ = 0;
+      }
+      
   }
 
   // Возвращает итератор, указывающий на позицию перед первым элементом

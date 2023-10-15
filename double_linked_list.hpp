@@ -207,6 +207,30 @@ class DoubleLinkedList {
     swap(temp);
   }
 
+  // Move ctor
+  DoubleLinkedList(DoubleLinkedList &&other) {
+    std::cout << "Move ctor" << std::endl;
+    size_ = other.size_;
+    other.size_ = 0;
+    head_ = other.head_;
+    other.head_ = nullptr;
+    end_ = other.end_;
+    other.end_ = nullptr;
+  }
+
+  // Move assignment operator
+  DoubleLinkedList &operator=(DoubleLinkedList &&rhs) {
+    std::cout << "Move assignment operator" << std::endl;
+    size_ = rhs.size_;
+    rhs.size_ = 0;
+    head_ = rhs.head_;
+    rhs.head_ = nullptr;
+    end_ = rhs.end_;
+    rhs.end_ = nullptr;
+
+    return *this;
+  }
+
   template <typename TypeIt>
   void Init(TypeIt begin, TypeIt end) {
     Node *node = &head_;
@@ -291,13 +315,15 @@ class DoubleLinkedList {
 
   // Очищает список за время O(N)
   void Clear() noexcept {
-    while (head_->next_node) {
-      // std::cout << head_.next_node->value << std::endl;
-      Node *new_head = head_->next_node->next_node;
-      delete head_->next_node;
-      head_->next_node = new_head;
+    if (head_) {
+      while (head_->next_node) {
+        Node *new_head = head_->next_node->next_node;
+        delete head_->next_node;
+        head_->next_node = new_head;
+      }
+      delete head_;
+      size_ = 0;
     }
-    size_ = 0;
   }
 
   // Возвращает итератор, указывающий на позицию перед первым элементом
@@ -328,8 +354,7 @@ class DoubleLinkedList {
   Iterator insert(ConstIterator pos, const Type &value) {
     if (pos.node_) {
       auto &new_node = pos.node_;
-      new_node->next_node =
-          new Node(value, new_node, new_node->next_node);
+      new_node->next_node = new Node(value, new_node, new_node->next_node);
       ++size_;
       return Iterator{new_node->next_node};
     } else {

@@ -1,6 +1,6 @@
 {
   "OutputFoldersPerTargetSystem": {
-    "Local Machine": [
+    "Локальный компьютер": [
       "out\\build\\x64-Debug",
       "out\\install\\x64-Debug"
     ]
@@ -8,6 +8,5 @@
   "ExpandedNodes": [
     ""
   ],
-  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

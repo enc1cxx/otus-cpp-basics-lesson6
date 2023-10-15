@@ -24,9 +24,9 @@ events:
       The output was:
       0
       Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-      Сборка начата 08.10.2023 21:04:30.
+      Сборка начата 12.10.2023 12:08:23.
       
-      Проект "C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      Проект "C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
         Создание каталога "Debug\\CompilerIdCXX.tlog\\".
@@ -38,7 +38,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -46,13 +46,13 @@ events:
       FinalizeBuildStatus:
         Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
         Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Сборка проекта "C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+      Сборка проекта "C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
       
       Сборка успешно завершена.
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.78
+      Прошло времени 00:00:02.49
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -60,7 +60,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/3.27.0-rc4/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/3.27.0-rc4/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -71,8 +71,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-0mqwqy"
-      binary: "C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-0mqwqy"
+      source: "C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-vlggnl"
+      binary: "C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-vlggnl"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -80,39 +80,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-0mqwqy'
+        Change Dir: 'C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-vlggnl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fa10e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0814c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-        Сборка начата 08.10.2023 21:04:32.
+        Сборка начата 12.10.2023 12:08:27.
         
-        Проект "C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0mqwqy\\cmTC_fa10e.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vlggnl\\cmTC_0814c.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_fa10e.dir\\Debug\\".
-          Создание каталога "C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0mqwqy\\Debug\\".
-          Создание каталога "cmTC_fa10e.dir\\Debug\\cmTC_fa10e.tlog\\".
+          Создание каталога "cmTC_0814c.dir\\Debug\\".
+          Создание каталога "C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vlggnl\\Debug\\".
+          Создание каталога "cmTC_0814c.dir\\Debug\\cmTC_0814c.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_fa10e.dir\\Debug\\cmTC_fa10e.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_fa10e.dir\\Debug\\cmTC_fa10e.tlog\\unsuccessfulbuild".
+          Создание "cmTC_0814c.dir\\Debug\\cmTC_0814c.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_0814c.dir\\Debug\\cmTC_0814c.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fa10e.dir\\Debug\\\\" /Fd"cmTC_fa10e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32824 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0814c.dir\\Debug\\\\" /Fd"cmTC_0814c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32825 для x64
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           CMakeCXXCompilerABI.cpp
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fa10e.dir\\Debug\\\\" /Fd"cmTC_fa10e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0814c.dir\\Debug\\\\" /Fd"cmTC_0814c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0mqwqy\\Debug\\cmTC_fa10e.exe" /INCREMENTAL /ILK:"cmTC_fa10e.dir\\Debug\\cmTC_fa10e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-0mqwqy/Debug/cmTC_fa10e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-0mqwqy/Debug/cmTC_fa10e.lib" /MACHINE:X64  /machine:x64 cmTC_fa10e.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fa10e.vcxproj -> C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0mqwqy\\Debug\\cmTC_fa10e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vlggnl\\Debug\\cmTC_0814c.exe" /INCREMENTAL /ILK:"cmTC_0814c.dir\\Debug\\cmTC_0814c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-vlggnl/Debug/cmTC_0814c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/CMakeScratch/TryCompile-vlggnl/Debug/cmTC_0814c.lib" /MACHINE:X64  /machine:x64 cmTC_0814c.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_0814c.vcxproj -> C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vlggnl\\Debug\\cmTC_0814c.exe
         FinalizeBuildStatus:
-          Файл "cmTC_fa10e.dir\\Debug\\cmTC_fa10e.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_fa10e.dir\\Debug\\cmTC_fa10e.tlog\\cmTC_fa10e.lastbuildstate".
-        Сборка проекта "C:\\Users\\User\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0mqwqy\\cmTC_fa10e.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_0814c.dir\\Debug\\cmTC_0814c.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_0814c.dir\\Debug\\cmTC_0814c.tlog\\cmTC_0814c.lastbuildstate".
+        Сборка проекта "C:\\Users\\AAleksandrov\\source\\repos\\otus-cpp-basics-lesson6\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vlggnl\\cmTC_0814c.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.54
+        Прошло времени 00:00:02.18
         
       exitCode: 0
 ...

@@ -1,3 +1,3 @@
-C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/single_linked_list.dir
-C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/User/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/single_linked_list.dir
+C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/AAleksandrov/source/repos/otus-cpp-basics-lesson6/build/CMakeFiles/ZERO_CHECK.dir
