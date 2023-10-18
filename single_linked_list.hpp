@@ -194,7 +194,7 @@ class SingleLinkedList {
   }
 
   // Move ctor
-  SingleLinkedList(SingleLinkedList&& other) noexcept {
+  SingleLinkedList(SingleLinkedList &&other) noexcept {
     std::cout << "Move ctor" << std::endl;
     size_ = other.size_;
     other.size_ = 0;
@@ -205,7 +205,7 @@ class SingleLinkedList {
   }
 
   // Move assignment operator
-  SingleLinkedList& operator=(SingleLinkedList&& rhs)noexcept {
+  SingleLinkedList &operator=(SingleLinkedList &&rhs) noexcept {
     std::cout << "Move assignment operator" << std::endl;
     this->size_ = rhs.size_;
     rhs.size_ = 0;
@@ -255,7 +255,10 @@ class SingleLinkedList {
 
   // Обменивает содержимое списков за время O(1)
   void swap(SingleLinkedList &other) noexcept {
-    // std::swap(this->head_->next_node, other.head_->next_node);
+    std::swap(head_, other.head_);
+    other.head_ = nullptr;
+    std::swap(end_, other.end_);
+    other.end_ = nullptr;
     std::swap(size_, other.size_);
   }
 
@@ -288,28 +291,35 @@ class SingleLinkedList {
     }
   }
 
+  // void print() {
+  //   if (is_empty()) return;
+  //   Node *p = head_->next_node;
+  //   while (p) {
+  //     std::cout << p->value << " ";
+  //     p = p->next_node;
+  //   }
+  //   std::cout << std::endl;
+  // }
+
   void print() {
     if (is_empty()) return;
-    Node *p = head_->next_node;
-    while (p) {
-      std::cout << p->value << " ";
-      p = p->next_node;
+    for (auto it = this->begin(); it != this->end(); ++it) {
+      std::cout << *it << " ";
     }
     std::cout << std::endl;
   }
 
   // Очищает список за время O(N)
   void clear() noexcept {
-      if (head_) {
-          while (head_->next_node) {
-              Node* new_head = head_->next_node->next_node;
-              delete head_->next_node;
-              head_->next_node = new_head;
-          }
-          delete head_;
-          size_ = 0;
+    if (head_) {
+      while (head_->next_node) {
+        Node *new_head = head_->next_node->next_node;
+        delete head_->next_node;
+        head_->next_node = new_head;
       }
-      
+      delete head_;
+      size_ = 0;
+    }
   }
 
   // Возвращает итератор, указывающий на позицию перед первым элементом

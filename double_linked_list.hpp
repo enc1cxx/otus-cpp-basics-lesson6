@@ -233,10 +233,10 @@ class DoubleLinkedList {
 
   template <typename TypeIt>
   void Init(TypeIt begin, TypeIt end) {
-    Node *node = &head_;
+    Node *node = head_;
     for (TypeIt i = begin; i != end; ++i) {
       ++size_;
-      node->next_node = new Node(*i, nullptr);
+      node->next_node = new Node(*i, nullptr, nullptr);
       node = node->next_node;
     }
   }
@@ -269,8 +269,11 @@ class DoubleLinkedList {
 
   // Обменивает содержимое списков за время O(1)
   void swap(DoubleLinkedList &other) noexcept {
-    std::swap(head_.next_node, other.head_.next_node);
-    std::swap(size_, other.size_);
+      std::swap(head_, other.head_);
+      other.head_ = nullptr;
+      std::swap(end_, other.end_);
+      other.end_ = nullptr;
+      std::swap(size_, other.size_);
   }
 
   // Сообщает, пустой ли список за время O(1)

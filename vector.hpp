@@ -1,4 +1,4 @@
-/* разместите свой код в этом файле */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
 #pragma once
 #include <algorithm>
 #include <cassert>
@@ -146,7 +146,10 @@ class Vector {
   }
 
   void print() {
-    for () std::cout << std::endl;
+    for (auto it = this->begin(); it != this->end(); ++it) {
+      std::cout << *it << " ";
+    }
+    std::cout << std::endl;
   }
 
   template <typename... Args>
@@ -164,7 +167,7 @@ class Vector {
 
   iterator erase(const_iterator pos) {
     assert(pos >= begin() && pos < end());
-    int position = pos - begin();
+    size_t position = pos - begin();
 
     std::move(begin() + position + 1, end(), begin() + position);
     std::destroy_at(end() - 1);
@@ -287,7 +290,7 @@ template <typename... Args>
 typename Vector<T>::iterator Vector<T>::Emplace(const_iterator pos,
                                                 Args&&... args) {
   assert(pos >= begin() && pos <= end());
-  int position = pos - begin();
+  size_t position = pos - begin();
 
   if (data_.Capacity() <= size_) {
     RawMemory<T> new_data(size_ == 0 ? 1 : size_ * 2);

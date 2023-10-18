@@ -4,11 +4,12 @@
 
 int main() {
   // 1
-  single_linked_list::SingleLinkedList<int> list1;
+  single_linked_list::SingleLinkedList<int> list1 = {0, 1, 2, 3, 4,
+                                                     5, 6, 7, 8, 9};
   // 2
-  for (int i = 0; i < 10; ++i) {
-    list1.push_back(i);
-  }
+  // for (int i = 0; i < 10; ++i) {
+  //  list1.push_back(i);
+  //}
   // 3
   std::cout << "Result print() = ";
   list1.print();
@@ -67,11 +68,12 @@ int main() {
   std::cout << "=================================================" << std::endl;
 
   // 1
-  double_linked_list::DoubleLinkedList<int> list2;
+  double_linked_list::DoubleLinkedList<int> list2 = {0, 1, 2, 3, 4,
+                                                     5, 6, 7, 8, 9};
   // 2
-  for (int i = 0; i < 10; ++i) {
-    list2.push_back(i);
-  }
+  /* for (int i = 0; i < 10; ++i) {
+     list2.push_back(i);
+   }*/
   // 3
   std::cout << "Result print() = ";
   list2.print();
@@ -166,7 +168,7 @@ int main() {
   std::cout << *vector1.begin() << std::endl;
   std::cout << vector1[0] << std::endl;
 
-  vector1.pop_front();
+  // vector1.pop_front();
 
   std::cout << "Result print() = ";
   vector1.print();
@@ -183,10 +185,10 @@ int main() {
   std::cout << "vector1.size() = " << vector1.size() << std::endl;
 
   double_linked_list::DoubleLinkedList<int> vector1_move_assignment;
-  vector1_move_assignment = std::move(vector1_move);
+  // vector1_move_assignment = std::move(vector1_move);
 
   std::cout << "Result vector1_move_assignment print() = ";
   vector1_move_assignment.print();
-  std::cout << "vector1_move_assignment.size() = " << vector1_move_assignment.size()
-            << std::endl;
+  std::cout << "vector1_move_assignment.size() = "
+            << vector1_move_assignment.size() << std::endl;
 }
