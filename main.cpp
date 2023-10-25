@@ -4,12 +4,11 @@
 
 int main() {
   // 1
-  single_linked_list::SingleLinkedList<int> list1 = {0, 1, 2, 3, 4,
-                                                     5, 6, 7, 8, 9};
+  single_linked_list::SingleLinkedList<int> list1;
   // 2
-  // for (int i = 0; i < 10; ++i) {
-  //  list1.push_back(i);
-  //}
+  for (int i = 0; i < 10; ++i) {
+    list1.push_back(i);
+  }
   // 3
   std::cout << "Result print() = ";
   list1.print();
@@ -68,12 +67,11 @@ int main() {
   std::cout << "=================================================" << std::endl;
 
   // 1
-  double_linked_list::DoubleLinkedList<int> list2 = {0, 1, 2, 3, 4,
-                                                     5, 6, 7, 8, 9};
+  double_linked_list::DoubleLinkedList<int> list2;
   // 2
-  /* for (int i = 0; i < 10; ++i) {
-     list2.push_back(i);
-   }*/
+  for (int i = 0; i < 10; ++i) {
+    list2.push_back(i);
+  }
   // 3
   std::cout << "Result print() = ";
   list2.print();
@@ -143,19 +141,19 @@ int main() {
   // 4
   std::cout << "vector1.size() = " << vector1.size() << std::endl;
   // 5
-  vector1.erase(std::next(vector1.begin(), 1));
   vector1.erase(std::next(vector1.begin(), 2));
   vector1.erase(std::next(vector1.begin(), 3));
+  vector1.erase(std::next(vector1.begin(), 4));
   // 6
   std::cout << "Result print() = ";
   vector1.print();
   // 7
-  vector1[0] = 10;
+  vector1.insert(vector1.begin(), 10);
   // 8
   std::cout << "Result print() = ";
   vector1.print();
   // 9
-  vector1.insert(std::next(vector1.begin(), 3), 20);
+  vector1.insert(std::next(vector1.begin(), 4), 20);
   // 10
   std::cout << "Result print() = ";
   vector1.print();
