@@ -166,8 +166,6 @@ int main() {
   std::cout << *vector1.begin() << std::endl;
   std::cout << vector1[0] << std::endl;
 
-  // vector1.pop_front();
-
   std::cout << "Result print() = ";
   vector1.print();
   std::cout << "vector1.size() = " << vector1.size() << std::endl;
@@ -182,8 +180,8 @@ int main() {
   vector1.print();
   std::cout << "vector1.size() = " << vector1.size() << std::endl;
 
-  double_linked_list::DoubleLinkedList<int> vector1_move_assignment;
-  // vector1_move_assignment = std::move(vector1_move);
+  vector::Vector<int> vector1_move_assignment;
+  vector1_move_assignment = std::move(vector1_move);
 
   std::cout << "Result vector1_move_assignment print() = ";
   vector1_move_assignment.print();

@@ -189,13 +189,12 @@ class SingleLinkedList {
 
   SingleLinkedList(std::initializer_list<Type> values) {
     SingleLinkedList temp;
-    temp.Init(values.begin(), values.end());
+    temp.init(values.begin(), values.end());
     swap(temp);
   }
 
   // Move ctor
   SingleLinkedList(SingleLinkedList &&other) noexcept {
-    std::cout << "Move ctor" << std::endl;
     size_ = other.size_;
     other.size_ = 0;
     head_ = other.head_;
@@ -206,7 +205,6 @@ class SingleLinkedList {
 
   // Move assignment operator
   SingleLinkedList &operator=(SingleLinkedList &&rhs) noexcept {
-    std::cout << "Move assignment operator" << std::endl;
     this->size_ = rhs.size_;
     rhs.size_ = 0;
     this->head_ = rhs.head_;
@@ -218,7 +216,7 @@ class SingleLinkedList {
   }
 
   template <typename TypeIt>
-  void Init(TypeIt begin, TypeIt end) {
+  void init(TypeIt begin, TypeIt end) {
     Node *node = head_;
     for (TypeIt i = begin; i != end; ++i) {
       ++size_;
@@ -229,7 +227,7 @@ class SingleLinkedList {
 
   SingleLinkedList(const SingleLinkedList &other) {
     SingleLinkedList temp;
-    temp.Init(other.begin(), other.end());
+    temp.init(other.begin(), other.end());
     swap(temp);
   }
 
@@ -241,7 +239,7 @@ class SingleLinkedList {
     return *this;
   }
 
-  Type &operator[](const int index) {
+  Type &operator[](const size_t index) {
     if (index >= size_) {
       throw std::out_of_range("Index");
     } else {
@@ -291,18 +289,11 @@ class SingleLinkedList {
     }
   }
 
-  // void print() {
-  //   if (is_empty()) return;
-  //   Node *p = head_->next_node;
-  //   while (p) {
-  //     std::cout << p->value << " ";
-  //     p = p->next_node;
-  //   }
-  //   std::cout << std::endl;
-  // }
-
   void print() {
-    if (is_empty()) return;
+    if (is_empty()){
+      std::cout << "Single linked list is empty" << std::endl;
+      return;
+    } 
     for (auto it = this->begin(); it != this->end(); ++it) {
       std::cout << *it << " ";
     }

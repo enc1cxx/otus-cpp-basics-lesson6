@@ -182,7 +182,7 @@ class DoubleLinkedList {
   // Возвращает константный итератор, ссылающийся на первый элемент
   // Если список пустой, возвращённый итератор будет равен cend()
   [[nodiscard]] ConstIterator cbegin() const noexcept {
-    return ConstIterator(head_.next_node);
+    return ConstIterator(head_->next_node);
   }
 
   // Возвращает константный итератор, указывающий на позицию, следующую за
@@ -203,13 +203,12 @@ class DoubleLinkedList {
 
   DoubleLinkedList(std::initializer_list<Type> values) {
     DoubleLinkedList temp;
-    temp.Init(values.begin(), values.end());
+    temp.init(values.begin(), values.end());
     swap(temp);
   }
 
   // Move ctor
   DoubleLinkedList(DoubleLinkedList &&other) {
-    std::cout << "Move ctor" << std::endl;
     size_ = other.size_;
     other.size_ = 0;
     head_ = other.head_;
@@ -220,7 +219,6 @@ class DoubleLinkedList {
 
   // Move assignment operator
   DoubleLinkedList &operator=(DoubleLinkedList &&rhs) {
-    std::cout << "Move assignment operator" << std::endl;
     size_ = rhs.size_;
     rhs.size_ = 0;
     head_ = rhs.head_;
@@ -232,7 +230,7 @@ class DoubleLinkedList {
   }
 
   template <typename TypeIt>
-  void Init(TypeIt begin, TypeIt end) {
+  void init(TypeIt begin, TypeIt end) {
     Node *node = head_;
     for (TypeIt i = begin; i != end; ++i) {
       ++size_;
@@ -243,11 +241,11 @@ class DoubleLinkedList {
 
   DoubleLinkedList(const DoubleLinkedList &other) {
     DoubleLinkedList temp;
-    temp.Init(other.begin(), other.end());
+    temp.init(other.begin(), other.end());
     swap(temp);
   }
 
-  Type &operator[](const int index) {
+  Type &operator[](const size_t index) {
     if (index >= size_) {
       throw std::out_of_range("Index");
     } else {
@@ -307,7 +305,10 @@ class DoubleLinkedList {
   }
 
   void print() {
-    if (is_empty()) return;
+    if (is_empty()) {
+      std::cout << "Double linked list is empty" << std::endl;
+      return;
+    } 
     Node *p = head_->next_node;
     while (p) {
       std::cout << p->value << " ";
@@ -317,7 +318,7 @@ class DoubleLinkedList {
   }
 
   // Очищает список за время O(N)
-  void Clear() noexcept {
+  void clear() noexcept {
     if (head_) {
       while (head_->next_node) {
         Node *new_head = head_->next_node->next_node;
@@ -387,7 +388,7 @@ class DoubleLinkedList {
     }
   }
 
-  ~DoubleLinkedList() { Clear(); }
+  ~DoubleLinkedList() { clear(); }
 
  private:
   // Фиктивный узел, используется для вставки "перед первым элементом"

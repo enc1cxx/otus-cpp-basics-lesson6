@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(unittests CXX)
+project(containers CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CXX_STANDARD_REQUIRED TRUE)
@@ -13,15 +13,5 @@ else()
     add_compile_options(-Wall -Wextra -pedantic -Werror -g)
 endif()
 
-add_executable(single_linked_list main.cpp)
-
-#add_executable(run_tests tests.cpp checkcardnum.cpp)
-
-#enable_testing()
-
-#add_subdirectory(tests)
-
-#add_subdirectory(gtests)
-
-#add_subdirectory(healthchecker)
+add_executable(containers main.cpp)
 
