@@ -1,3 +1,0 @@
-/home/test/Documents/Projects/otus-cpp-basics-lesson6/build/CMakeFiles/containers.dir
-/home/test/Documents/Projects/otus-cpp-basics-lesson6/build/CMakeFiles/edit_cache.dir
-/home/test/Documents/Projects/otus-cpp-basics-lesson6/build/CMakeFiles/rebuild_cache.dir
