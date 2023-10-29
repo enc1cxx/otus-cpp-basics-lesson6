@@ -143,6 +143,10 @@ public:
   }
 
   void print() {
+    if (size_ == 0) {
+      std::cout << "Vector is empty" << std::endl;
+      return;
+    } 
     for (auto it = this->begin(); it != this->end(); ++it) {
       std::cout << *it << " ";
     }
