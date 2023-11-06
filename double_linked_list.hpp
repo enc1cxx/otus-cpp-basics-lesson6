@@ -319,16 +319,13 @@ class DoubleLinkedList {
 
   // Очищает список за время O(N)
   void clear() noexcept {
-    if (head_) {
+    if (head_){
       while (head_->next_node) {
-        Node *new_head = head_->next_node->next_node;
-        delete head_->next_node;
-        head_->next_node = new_head;
+        delete std::exchange(head_->next_node, head_->next_node->next_node);
       }
-      delete head_;
-      size_ = 0;
-    }
+    size_ = 0;
   }
+}
 
   // Возвращает итератор, указывающий на позицию перед первым элементом
   // односвязного списка. Разыменовывать этот итератор нельзя - попытка
